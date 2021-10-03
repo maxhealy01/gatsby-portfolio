@@ -1,11 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Projects from "../components/Projects"
 // ...GatsbyImageSharpFluid
 
 const ProjectsPage = () => {
-  return <h2>projects page</h2>
+  return (
+    <Layout>
+      <section className="projects-page">
+        <Projects />
+      </section>
+    </Layout>
+  )
 }
 
 export default ProjectsPage

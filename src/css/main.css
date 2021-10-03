@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700&display=swap"); */
 
 /*
 =============== 
@@ -14,17 +14,17 @@ Variables
 :root {
   /* dark shades of primary color*/
   /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: hsl(184, 91%, 17%);
-  --clr-primary-2: hsl(185, 84%, 25%);
-  --clr-primary-3: hsl(185, 81%, 29%);
-  --clr-primary-4: hsl(184, 77%, 34%);
-  --clr-primary-5: #2caeba;
+  --clr-primary-1: hsl(276, 91%, 17%);
+  --clr-primary-2: hsl(276, 84%, 25%);
+  --clr-primary-3: hsl(276, 81%, 29%);
+  --clr-primary-4: hsl(276, 77%, 34%);
+  --clr-primary-5: #752cba;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(185, 57%, 50%);
-  --clr-primary-7: hsl(184, 65%, 59%);
-  --clr-primary-8: hsl(184, 80%, 74%);
-  --clr-primary-9: hsl(185, 94%, 87%);
-  --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-6: hsl(276, 57%, 50%);
+  --clr-primary-7: hsl(276, 65%, 59%);
+  --clr-primary-8: hsl(276, 80%, 74%);
+  --clr-primary-9: hsl(276, 94%, 87%);
+  --clr-primary-10: hsl(276, 100%, 94%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-3: hsl(209, 34%, 30%);
@@ -38,7 +38,7 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Oswald", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
@@ -171,9 +171,9 @@ p {
 }
 /* added during recording */
 .underline {
-  width: 5rem;
+  width: 10rem;
   height: 0.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   background: var(--clr-primary-5);
   margin-left: auto;
   margin-right: auto;
@@ -462,6 +462,7 @@ Hero
     grid-column: 1 / span 8;
   }
   .hero-img {
+    border-radius: 50%;
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
@@ -697,7 +698,7 @@ Projects
 }
 .project-icon {
   color: var(--clr-primary-5);
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   margin-right: 0.5rem;
   transition: var(--transition);
 }
@@ -893,6 +894,7 @@ About Page
   padding: 7rem 0;
 }
 .about-img {
+  border-radius: 50%;
   margin-bottom: 2rem;
   height: 25rem;
 }
