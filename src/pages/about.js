@@ -7,7 +7,7 @@ import Image from "gatsby-image"
 
 const query = graphql`
   {
-    file(relativePath: { eq: "hero.jpg" }) {
+    file(relativePath: { eq: "hero.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -23,8 +23,13 @@ const About = () => {
       childImageSharp: { fluid },
     },
   } = useStaticQuery(query)
-  const info =
-    "Full Stack Web Developer leveraging a ​background in management and customer service. Recognized for leadership skills and problem-solving capabilities. ​Recently received a Certificate in Web Development from the University of Texas at Austin. Excellent collaborator with interpersonal skills who works well on team-based projects as well as independently. Recognized for proven complex problem-solving abilities to contribute effectively as a part of a fast-paced, quality-driven team."
+  const info = [
+    "Full Stack Web Developer leveraging a ​background in management and customer service.",
+    "Recognized for leadership skills and problem-solving capabilities.",
+    "​Recently received a Certificate in Web Development from the University of Texas at Austin.",
+    "Excellent collaborator with interpersonal skills who works well on team-based projects as well as independently.",
+    "Recognized for proven complex problem-solving abilities to contribute effectively as a part of a fast-paced, quality-driven team.",
+  ]
 
   const stack = [
     { id: 1, title: "React" },
@@ -49,7 +54,11 @@ const About = () => {
           <Image fluid={fluid} className="about-img" />
           <article className="about-text">
             <Title title={title} />
-            <p>{info}</p>
+            <ul className="about-list">
+              {info.map(item => (
+                <li>{item}</li>
+              ))}
+            </ul>
             <div className="about-stack">
               {stack.map(item => {
                 return <span key={item.id}>{item.title}</span>
