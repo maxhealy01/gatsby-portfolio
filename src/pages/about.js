@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 // ...GatsbyImageSharpFluid
+import Seo from "../components/SEO"
 
 const query = graphql`
   {
@@ -49,6 +50,7 @@ const About = () => {
 
   return (
     <Layout>
+      <Seo title="About" />
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={fluid} className="about-img" />

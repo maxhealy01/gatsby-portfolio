@@ -35,7 +35,7 @@ const Projects = ({ showLink }) => {
       description: "An ecommerce app where users can purchase clay art.",
       title: "Clay By Stacy",
       url: "claybystacy.net",
-      image: images[0],
+      image: images[1],
       stack: [
         { id: 1, title: "Gatsby.js" },
         { id: 2, title: "React" },
@@ -49,17 +49,17 @@ const Projects = ({ showLink }) => {
       github: "https://github.com/maxhealy01/here-and-now",
       id: 1,
       description:
-        "A social app that uses Google Maps to connect its users in time and space.",
+        "A social app that uses Mapbox to connect its users in time and space.",
       title: "Here and Now",
       url: "https://app-hereandnow.herokuapp.com/",
-      image: images[1],
+      image: images[0],
       stack: [
         { id: 1, title: "Node.js" },
         { id: 2, title: "Express" },
         { id: 3, title: "MongoDB" },
         { id: 4, title: "GraphQL" },
         { id: 5, title: "React" },
-        { id: 6, title: "Google Maps" },
+        { id: 6, title: "Mapbox" },
       ],
     },
   ]
