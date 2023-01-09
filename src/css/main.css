@@ -194,6 +194,14 @@ p {
   display: flex;
   justify-content: space-around;
 }
+
+.hero .social-links {
+  justify-content: left;
+}
+.hero .social-link {
+  margin-right: 1.5rem;
+}
+
 .social-link {
   font-size: 1.75rem;
   color: var(--clr-grey-1);
